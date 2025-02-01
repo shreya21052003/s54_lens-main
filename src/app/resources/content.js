@@ -1,19 +1,19 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "S54_lens",
+  lastName: "",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Videography, Photography, Content Creators",
   avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Kannada","Tulu"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
@@ -27,14 +27,9 @@ const social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
   {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
-  },
-  {
-    name: "LinkedIn",
-    icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    name: "Instagran",
+    icon: "instagram",
+    link: "https://www.instagram.com/s54__v?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
   },
   {
     name: "X",
@@ -44,7 +39,7 @@ const social = [
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:preethamalva1007@@gmail.com",
   },
 ];
 
@@ -52,18 +47,18 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  headline: <>Photography, Videography, Content Creators</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      We're s54, a <InlineCode>Freelance Videographers</InlineCode>,where we craft intuitive
+      user experience. Check out our videos!!
     </>
   ),
 };
 
 const about = {
   label: "About",
-  title: "About me",
+  title: "About Us",
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
@@ -73,7 +68,7 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -81,9 +76,12 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        -We are a creative team of videographers, photographers, and content creators.  
+        Delivering high-quality visuals at unbeatable prices.  
+        <br />
+        -From stunning car and bike shoots to captivating shop opening videos, we bring your vision to life.  
+        <br />
+        -Explore our portfolio and let us capture your story like never before!  
       </>
     ),
   },
@@ -92,9 +90,9 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "HOUSE WARMING CEREMONY",
+        timeframe: "Jan 2025",
+        role: "",
         achievements: [
           <>
             Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
@@ -134,7 +132,7 @@ const about = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Studies",
     institutions: [
       {
@@ -148,7 +146,7 @@ const about = {
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Technical skills",
     skills: [
       {
@@ -197,7 +195,7 @@ const blog = {
 
 const work = {
   label: "Work",
-  title: "My projects",
+  title: "Our projects",
   description: `Design and dev projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
@@ -205,77 +203,83 @@ const work = {
 
 const gallery = {
   label: "Gallery",
-  title: "My photo gallery",
+  title: "Our photo gallery",
   description: `A photo collection by ${person.name}`,
   // Images from https://pexels.com
   images: [
     {
-      src: "/images/gallery/img-01.jpg",
+      src: "/images/gallery/s541.jpg",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-02.jpg",
+      src: "/images/gallery/bike1.jpg",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/img-03.jpg",
+      src: "/images/gallery/friend1.jpg",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-04.jpg",
+      src: "/images/gallery/s544.jpg",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/img-05.jpg",
+      src: "/images/gallery/car3.jpg",
       alt: "image",
       orientation: "horizontal",
     },
+    
     {
-      src: "/images/gallery/img-06.jpg",
+      src: "/images/gallery/fish1.jpg",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-07.jpg",
+      src: "/images/gallery/car2.jpg",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/img-08.jpg",
+      src: "/images/gallery/s542.jpg",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-09.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-10.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-11.jpg",
+      src: "/images/gallery/bike2.png",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-12.jpg",
+      src: "/images/gallery/desert1.jpg",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/img-13.jpg",
+      src: "/images/gallery/desert2.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/falls1.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/disco1.jpg",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/img-14.jpg",
+      src: "/images/gallery/s543.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/sunset1.jpg",
       alt: "image",
       orientation: "horizontal",
     },
